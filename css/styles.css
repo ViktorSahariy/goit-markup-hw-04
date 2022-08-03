@@ -137,16 +137,29 @@ nav > a {
 }
 .contacts-nav .list + .list {
     margin-left: 48px;
+}
+.header-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+.header-icon:hover,
+.header-icon:focus {
+color: var(--color-second);
 } 
 /*HERO*/ 
 .banner.section {
     background-color: var(--color-hero);
+    background-image: linear-gradient(
+    to right,
+     rgba(47, 48, 58, 0.4),
+     rgba(47, 48, 58, 0.4)),
+     url(../images/hero-background.jpg);
+    max-width: 1600px;
+    background-size: cover;
+    background-position: center;
     text-align: center;
-    padding-left: 0;
     padding-top: 200px;
     padding-bottom: 200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 .hero {
     font-family: var(--font-family-primary);
@@ -189,6 +202,17 @@ nav > a {
     text-transform: uppercase;
 } 
 /*QUALITY SECTION*/
+.container.quality-box {
+    width: 270px;
+    height: 120px;
+    background-color: var(--color-team);
+    margin-bottom: 30px;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .quality-name {
     margin-bottom: 10px;
 }
@@ -202,6 +226,7 @@ nav > a {
 .quality .quality-list:last-child {
     margin-right: 0;
 }
+
 /*ЧИМ МИ ЗАЙМАЄМОСЬ*/
 .works.section {
     padding-top: 0;
@@ -233,10 +258,13 @@ nav > a {
 }
 .teammates {
     background-color: var(--color-hero-name);
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14), 
+    0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-right: 30px;
 }
+
 .teammates :last-child {
 margin-right: 0;
 }
@@ -261,6 +289,72 @@ margin-right: 0;
     font-weight: 400;
     line-height: 1.7;
     margin-bottom: 0;
+}
+.social-list {
+    padding: 0 32px 30px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.social-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+.social-item:last-child {
+    margin-right: 0;
+}
+.social-links {
+    color: var(--color-social-icons);
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-links:hover,
+.social-links:focus {
+    color: var(--color-hero-name);
+    background-color: var(--color-second);
+    border-radius: 50%;
+}
+.social-icons {
+    fill: currentColor;
+}
+/*CLIENTS*/
+.clients-name {
+    font-weight: 700;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.clients-list {
+    display: flex;
+    justify-content: center;
+}
+.clients-items {
+    margin-right: 30px;
+}
+.clients-items:last-child {
+    margin-right: 0;
+}
+.clients-link {
+    color: var(--color-icons);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+}
+.clients-link:hover,
+.clients-link:focus {
+    color: var(--color-second);
+    border-color: var(--color-second);
+}
+.clients-icon {
+    fill: currentColor;
 }
 /*FOOTER*/ 
 .footer {
@@ -315,6 +409,45 @@ margin-right: 0;
     margin-top: 20px;
     margin-bottom: 9px;
 } 
+.container.social-box-footer {
+    width: 206px;
+    margin: 0;
+    margin-left: 70px;
+    padding: 0;
+}
+.social-name-footer {
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.social-list-footer {
+    display: flex;
+}
+.social-links-footer {
+    color: var(--color-hero-name);
+    background-color: var(--color-icons-footer);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.social-links-footer:hover,
+.social-links-footer:focus {
+    color: var(--color-hero-name);
+    background-color: var(--color-second);
+    border-radius: 50%;
+}
+.container.adress-box {
+    padding: 0;
+    margin: 0;
+    width: 231px;
+}
+.footer-box {
+    display: flex;
+    align-items: baseline;
+}
 /*PORTFOLIO*/ 
 .portfolio.section {
     margin-top: 94px;
