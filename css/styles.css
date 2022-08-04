@@ -448,6 +448,15 @@ margin-right: 0;
     display: flex;
     align-items: baseline;
 }
+.footer-logotip {
+    margin-bottom: 20px;
+}
+.adress {
+    margin-bottom: 9px;
+}
+.footer-contacts-list {
+    margin-bottom: 9px;
+}
 /*PORTFOLIO*/ 
 .portfolio.section {
     margin-top: 94px;
