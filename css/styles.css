@@ -32,13 +32,16 @@ ul {
     --color-second: #2196f3;
     --color-contacts: #757575;
     --color-hero: #2f303a;
-    --color-hero-name: #ffffff; 
+    --color-hero-name: #ffffff;
     --color-button: #188ce8;
-    --color-team: #f5f4fa; 
+    --color-team: #f5f4fa;
     --color-contacts-footer: rgba(255, 255, 255, 0.6);
+    --color-social-icons: #afb1b8; 
+    --color-icons-footer: rgba(255, 255, 255, 0.1);
+    --color-icons: #afb1b8;
 
-    --font-family-primary: 'Roboto', sens-serif;
-    --font-family-logo: 'Raleway', sens-serif;
+    --font-family-primary: 'Roboto', sans-serif;
+    --font-family-logo: 'Raleway', sans-serif;
 }
 body {
     color: var(--color-primary);
@@ -145,7 +148,7 @@ nav > a {
 .header-icon:hover,
 .header-icon:focus {
 color: var(--color-second);
-} 
+}
 /*HERO*/ 
 .banner.section {
     background-color: var(--color-hero);
@@ -452,13 +455,14 @@ margin-right: 0;
     margin-bottom: 20px;
 }
 .adress {
+    margin-top: 20px;
     margin-bottom: 9px;
 }
 .footer-contacts-list {
     margin-bottom: 9px;
 }
 /*PORTFOLIO*/ 
-.portfolio.section {
+/*.portfolio.section {
     margin-top: 94px;
     padding-bottom: 94px;
 }
