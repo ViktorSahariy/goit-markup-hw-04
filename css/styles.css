@@ -237,8 +237,8 @@ color: var(--color-second);
 .name.name-works {
     margin-bottom: 50px;
 }
-.work .work-list {
-    margin-right: 30px;
+.work {
+    gap: 30px;
 }
 .work .work-list :last-child {
     margin-right: 0;
@@ -280,7 +280,6 @@ margin-right: 0;
 }
 .team-name-box {
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 .bgteam p {
     display: flex;
@@ -291,10 +290,10 @@ margin-right: 0;
     color: var(--color-contacts);
     font-weight: 400;
     line-height: 1.7;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 }
 .social-list {
-    padding: 0 32px 30px 32px;
+    padding: 0 32px 32px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -324,6 +323,7 @@ margin-right: 0;
 .social-icons {
     fill: currentColor;
 }
+
 /*CLIENTS*/
 .clients-name {
     font-weight: 700;
@@ -350,6 +350,8 @@ margin-right: 0;
     height: 92px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-link:hover,
 .clients-link:focus {
@@ -460,6 +462,9 @@ margin-right: 0;
 }
 .footer-contacts-list {
     margin-bottom: 9px;
+}
+.footer-contacts-list:last-child {
+    margin-bottom: 0;
 }
 /*PORTFOLIO*/ 
 /*.portfolio.section {
